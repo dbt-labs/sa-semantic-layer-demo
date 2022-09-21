@@ -1,5 +1,12 @@
 
-{{ config(materialized='table') }}
+{{ config(
+    materialized = 'table', 
+    grants = {
+    'select': 'reporter'
+}
+) }}
+
+{{ config(materialized = 'table', ) }}
 
 with customers as (
 
