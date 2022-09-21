@@ -69,3 +69,6 @@
 2022-09-21 14:16:45.707478 (Thread-19): handling status request
 2022-09-21 14:16:45.707874 (Thread-19): 14:16:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1dbb3996-ea6f-4129-9b4d-cab4d0e9cae0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f47126a0>]}
 2022-09-21 14:16:45.708309 (Thread-19): sending response (<Response 356 bytes [200 OK]>) to 10.0.19.15
+2022-09-21 14:17:12.917703 (Thread-21): handling status request
+2022-09-21 14:17:12.918106 (Thread-21): 14:17:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1dbb3996-ea6f-4129-9b4d-cab4d0e9cae0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f46a0640>]}
+2022-09-21 14:17:12.918541 (Thread-21): sending response (<Response 356 bytes [200 OK]>) to 10.0.19.15
