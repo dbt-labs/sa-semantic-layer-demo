@@ -1,3 +1,4 @@
-logs
-target
-dbt_packages
+target/
+dbt_packages/
+logs/
+env/
