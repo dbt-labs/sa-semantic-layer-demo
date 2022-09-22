@@ -20,6 +20,6 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 models:
-    demo_data:
-      +grants:
-        select: ['reporter']
+  demo_data:
+    +grants:
+      select: ['reporter']
