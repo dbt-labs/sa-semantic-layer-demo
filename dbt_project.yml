@@ -23,3 +23,6 @@ models:
   demo_data:
     +grants:
       select: ['transformer','reporter']
+  metrics:
+    +grants:
+      select: ['transformer','reporter']      
