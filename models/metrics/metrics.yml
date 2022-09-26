@@ -16,6 +16,7 @@ metrics:
     dimensions:
       - location_name
 
+ 
   - name: customers
     label: Customers
     model: ref('fct_orders')
