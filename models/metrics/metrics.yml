@@ -29,3 +29,18 @@ metrics:
 
     dimensions:
       - location_name
+
+  - name: total_food_items
+    label: Total Food Items
+    model: ref('fct_orders')
+    description: "Number of food items sold"
+
+    type: sum
+    sql: count_food_items
+
+    timestamp: ordered_at
+    time_grains: [day, week, month, quarter, year]
+
+    dimensions:
+      - location_name
+      - is_first_order
