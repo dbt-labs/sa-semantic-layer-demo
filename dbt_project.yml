@@ -24,13 +24,11 @@ vars:
 
 models:
   demo_data:
-    marts:
-      +materialized: table
-
-models:
-  demo_data:
     +grants:
       select: ['transformer','reporter']
+    marts:
+      +materialized: table
   metrics:
     +grants:
-      select: ['transformer','reporter']      
+      select: ['transformer','reporter']   
+     
