@@ -19,10 +19,16 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+vars:
+  truncate_timespan_to: "{{ dbt_utils.current_timestamp() }}"
+
 models:
   demo_data:
     +grants:
       select: ['transformer','reporter']
+    marts:
+      +materialized: table
   metrics:
     +grants:
-      select: ['transformer','reporter']      
+      select: ['transformer','reporter']   
+     
