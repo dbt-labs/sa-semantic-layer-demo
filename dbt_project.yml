@@ -27,7 +27,7 @@ models:
     +grants:
       select: ['transformer','reporter']
     marts:
-      +materialized: table
+      +materialized: "{{ env_var('DBT_MATERIALIZATION') }}"
   metrics:
     +grants:
       select: ['transformer','reporter']   
