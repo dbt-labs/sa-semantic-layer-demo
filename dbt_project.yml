@@ -20,7 +20,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
-  truncate_timespan_to: "{{ dbt_utils.current_timestamp() }}"
+  truncate_timespan_to: "{{ dbt.current_timestamp() }}"
+  surrogate_key_treat_nulls_as_empty_strings: true 
 
 models:
   demo_data:
